@@ -13,8 +13,7 @@ const initialState : IState = {
 }
 
 export default function CartReducer(state = initialState, action:ActionCartReducer) {
-    // @ts-ignore
-    state.products = JSON.parse(localStorage.getItem('cartList'))
+    state.products = JSON.parse(localStorage.getItem('cartList') || '')
     switch (action.type){
         case SetCartAction.ADD_CART :
             const cartListAdd: IProduct[] = [...state.products, action.payload]
