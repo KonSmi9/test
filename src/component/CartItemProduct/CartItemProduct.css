@@ -1,0 +1,52 @@
+tr{
+    border: 1px solid transparent;
+    margin: 20px;
+    padding: 10px;
+}
+
+tr:hover{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.table__image{
+    width: 10%;
+    display: flex;
+}
+
+.table__name {
+    width: 40%;
+    text-align: left;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 5;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+.table__price{
+    text-align: center;
+    width: 20%;
+    vertical-align: center;
+    padding: 10px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+.table__button{
+    width: 30%;
+}
+
+.image{
+    margin: 10px;
+    padding: 10px;
+    height: 120px;
+}
+.button__del {
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e31235;
+    color: white;
+    cursor: pointer;
+}

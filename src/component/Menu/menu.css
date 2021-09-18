@@ -1,0 +1,24 @@
+.menu{
+    margin: auto 10px;
+}
+.menu__ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu__li{
+    list-style-type: none;
+    margin: auto;
+}
+.menu__li:hover{
+    border-bottom: 3px solid white;
+}
+.menu__a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto 15px;
+}

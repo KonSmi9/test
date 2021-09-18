@@ -1,0 +1,9 @@
+.empty-page{
+    height: 100vh;
+    display: flex;
+}
+
+.cart-page_title{
+    margin: auto;
+    text-align: center;
+}

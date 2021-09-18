@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import { CartPage } from './pages/cart/CratPage';
+import { CatalogPage } from './pages/catalog/CatalogPage';
+import { HeaderBlock } from './hoc/header/header';
+import { LogoComponent } from './component/Logo/logo';
+import { CartComponent } from './component/Cart/cart';
+import { MenuCoponent } from './component/Menu/menu';
 
+import './App.css'
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <React.Fragment>
+          <HeaderBlock>
+              <LogoComponent/>
+              <MenuCoponent/>
+              <CartComponent/>
+          </HeaderBlock>
+            <div className={"content"}>
+              <Route path="/" exact component={CatalogPage} />
+              <Route path="/cart" component={CartPage} />
+            </div>
+      </React.Fragment>
   );
 }
 
